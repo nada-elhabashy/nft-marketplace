@@ -1,0 +1,167 @@
+    :host {
+      display: contents;
+    }
+    .how-it-works {
+      align-items: center;
+      align-self: stretch;
+      background: var(--Background, #2b2b2b);
+      background-color: var(--Background, #2b2b2b);
+      display: flex;
+      flex-direction: column;
+      font-family: Work Sans, sans-serif;
+      justify-content: start;
+      padding: 80px 115px;
+    }
+    @media (max-width: 991px) {
+      .how-it-works {
+        padding: 0 20px;
+      }
+    }
+    .section-headline {
+      display: flex;
+      max-width: 100%;
+      width: 1050px;
+      flex-direction: column;
+      color: var(--White, #fff);
+      text-transform: capitalize;
+      justify-content: start;
+    }
+    .how-it-works-2 {
+      font-size: 38px;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+    @media (max-width: 991px) {
+      .how-it-works-2 {
+        max-width: 100%;
+      }
+    }
+    .find-out-how-to-get-started {
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 1.6;
+      margin-top: 10px;
+    }
+    @media (max-width: 991px) {
+      .find-out-how-to-get-started {
+        max-width: 100%;
+      }
+    }
+    .card-row {
+      display: flex;
+      margin-top: 48px;
+      gap: 30px;
+      text-align: center;
+      justify-content: start;
+      flex-wrap: wrap;
+    }
+    @media (max-width: 991px) {
+      .card-row {
+        max-width: 100%;
+        margin-top: 40px;
+      }
+    }
+    .info-card {
+      border-radius: 20px;
+      background: var(--Background---Secondary, #3b3b3b);
+      background-color: var(--Background---Secondary, #3b3b3b);
+      align-self: start;
+      display: flex;
+      min-width: 240px;
+      flex-direction: column;
+      justify-content: start;
+      width: 330px;
+      padding: 10px 30px 30px;
+    }
+    @media (max-width: 991px) {
+      .info-card {
+        padding: 0 20px;
+      }
+    }
+    .img {
+      aspect-ratio: 1;
+      object-fit: contain;
+      object-position: center;
+      width: 250px;
+      align-self: center;
+      max-width: 100%;
+    }
+    .card-details {
+      display: flex;
+      margin-top: 20px;
+      width: 100%;
+      flex-direction: column;
+      justify-content: start;
+    }
+    .setup-your-wallet {
+      color: #fff;
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 1.4;
+      text-transform: capitalize;
+    }
+    .set-up-your-wallet-of-choice-connect-it-to-the-nft-market-by-clicking-the-wallet-icon-in-the-top-right-corner {
+      color: var(--White, #fff);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      margin-top: 10px;
+    }
+    .info-card-2 {
+      border-radius: 20px;
+      background: var(--Background---Secondary, #3b3b3b);
+      background-color: var(--Background---Secondary, #3b3b3b);
+      display: flex;
+      min-width: 240px;
+      flex-direction: column;
+      color: var(--White, #fff);
+      justify-content: start;
+      width: 330px;
+      padding: 10px 30px 30px;
+    }
+    @media (max-width: 991px) {
+      .info-card-2 {
+        padding: 0 20px;
+      }
+    }
+    .setup-your-wallet-2 {
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 1.4;
+      text-transform: capitalize;
+    }
+    .set-up-your-wallet-of-choice-connect-it-to-the-nft-market-by-clicking-the-wallet-icon-in-the-top-right-corner-2 {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      margin-top: 10px;
+    }
+    .info-card-3 {
+      border-radius: 20px;
+      background: var(--Background---Secondary, #3b3b3b);
+      background-color: var(--Background---Secondary, #3b3b3b);
+      display: flex;
+      min-width: 240px;
+      flex-direction: column;
+      color: var(--White, #fff);
+      justify-content: start;
+      width: 330px;
+      padding: 10px 30px 30px;
+    }
+    @media (max-width: 991px) {
+      .info-card-3 {
+        padding: 0 20px;
+      }
+    }
+    .setup-your-wallet-3 {
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 1.4;
+      text-transform: capitalize;
+    }
+    .set-up-your-wallet-of-choice-connect-it-to-the-nft-market-by-clicking-the-wallet-icon-in-the-top-right-corner-3 {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      margin-top: 10px;
+    }

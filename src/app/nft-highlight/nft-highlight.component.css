@@ -1,0 +1,237 @@
+ :host {
+      display: contents;
+    }
+    /* .59 {
+      font-size: 38px;
+      font-weight: 700;
+      line-height: 1.2;
+      text-transform: capitalize;
+    } */
+    .div {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      min-height: 640px;
+      justify-content: start;
+    }
+    .img {
+      position: absolute;
+      inset: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    .nft-info {
+      position: relative;
+      display: flex;
+      width: 100%;
+      align-items: end;
+      justify-content: center;
+      padding: 360px 115px 60px;
+    }
+    @media (max-width: 991px) {
+      .nft-info {
+        max-width: 100%;
+        padding: 100px 20px 0;
+      }
+    }
+    .div-2 {
+      display: flex;
+      min-width: 240px;
+      width: 1050px;
+      align-items: end;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .nft-artst-name-button {
+      display: flex;
+      min-width: 240px;
+      flex-direction: column;
+      align-items: start;
+      justify-content: start;
+      flex: 1;
+      flex-basis: 60px;
+    }
+    @media (max-width: 991px) {
+      .nft-artst-name-button {
+        max-width: 100%;
+      }
+    }
+    .artist-card {
+      border-radius: 20px;
+      background-color: rgba(59, 59, 59, 1);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      justify-content: start;
+      padding: 10px 20px;
+    }
+    .avatar {
+      align-self: stretch;
+      display: flex;
+      align-items: start;
+      gap: 10px;
+      justify-content: start;
+      width: 24px;
+      margin: auto 0;
+    }
+    .img-2 {
+      aspect-ratio: 1;
+      object-fit: contain;
+      object-position: center;
+      width: 24px;
+    }
+    .dish-studio {
+      color: #fff;
+      align-self: stretch;
+      margin: auto 0;
+      font: 400 16px/1.4 Work Sans, -apple-system, Roboto, Helvetica,
+        sans-serif;
+    }
+    .magic-mashrooms {
+      align-self: stretch;
+      color: #fff;
+      text-transform: capitalize;
+      margin-top: 30px;
+      font: 600 51px/1.1 Work Sans, -apple-system, Roboto, Helvetica,
+        sans-serif;
+    }
+    @media (max-width: 991px) {
+      .magic-mashrooms {
+        max-width: 100%;
+        font-size: 40px;
+      }
+    }
+    .button {
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      background: var(--Text, #fff);
+      background-color: var(--Text, #fff);
+      display: flex;
+      margin-top: 30px;
+      min-height: 60px;
+      gap: 12px;
+      color: var(--Background, #2b2b2b);
+      text-align: center;
+      padding: 19px 50px;
+      font: 600 16px/1.4 Work Sans, -apple-system, Roboto, Helvetica,
+        sans-serif;
+    }
+    @media (max-width: 991px) {
+      .button {
+        padding: 0 20px;
+      }
+    }
+    .img-3 {
+      aspect-ratio: 1;
+      object-fit: contain;
+      object-position: center;
+      width: 20px;
+      align-self: stretch;
+      margin: auto 0;
+    }
+    .button-2 {
+      align-self: stretch;
+      margin: auto 0;
+    }
+    .auction-timer {
+      border-radius: 20px;
+      background-color: rgba(59, 59, 59, 0.5);
+      display: flex;
+      min-width: 240px;
+      flex-direction: column;
+      font-family: Space Mono, sans-serif;
+      color: var(--Text, #fff);
+      justify-content: end;
+      width: 295px;
+      padding: 30px;
+    }
+    @media (max-width: 991px) {
+      .auction-timer {
+        padding: 0 20px;
+      }
+    }
+    .auction-ends-in {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 1.1;
+    }
+    .timer {
+      display: flex;
+      margin-top: 10px;
+      width: 100%;
+      align-items: start;
+      gap: 10px;
+      white-space: nowrap;
+      justify-content: start;
+    }
+    @media (max-width: 991px) {
+      .timer {
+        white-space: initial;
+      }
+    }
+    .hours {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      flex: 1;
+      flex-basis: 0%;
+    }
+    @media (max-width: 991px) {
+      .hours {
+        white-space: initial;
+      }
+    }
+    .hours-2 {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 1.1;
+      margin-top: 5px;
+      flex: 1;
+    }
+    /* . {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.4;
+      text-transform: capitalize;
+    } */
+    .minutes {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      flex: 1;
+      flex-basis: 0%;
+    }
+    @media (max-width: 991px) {
+      .minutes {
+        white-space: initial;
+      }
+    }
+    .minutes-2 {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 1.1;
+      margin-top: 5px;
+      flex: 1;
+    }
+    .seconds {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      flex: 1;
+      flex-basis: 0%;
+    }
+    @media (max-width: 991px) {
+      .seconds {
+        white-space: initial;
+      }
+    }
+    .seconds-2 {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 1.1;
+      margin-top: 5px;
+      flex: 1;
+    }
