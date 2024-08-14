@@ -2,59 +2,28 @@
   <div class="how-it-works">
     <div class="section-headline">
       <div class="how-it-works-2">How it works</div>
-      <div class="find-out-how-to-get-started">
+      <div class="title">
         Find out how to get started
       </div>
     </div>
     <div class="card-row">
-      <div class="info-card">
+      <div *ngFor="let item of steps" class="info-card">
         <img
-          loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/279922b5a1536a714f7690d74d7c588dc8abc2b9e513c5199e1b49f0f04522c4?placeholderIfAbsent=true&apiKey=8d233d2874ca4f8c9c23e6e96e902d5f"
+        [src]=" '../../assets/images/'+item.src"  
+        [alt]="item.alt" 
           class="img"
         />
         <div class="card-details">
-          <div class="setup-your-wallet">Setup Your wallet</div>
+          <div class="name">{{item.name}}</div>
           <div
-            class="set-up-your-wallet-of-choice-connect-it-to-the-nft-market-by-clicking-the-wallet-icon-in-the-top-right-corner"
+            class="discription"
           >
-            Set up your wallet of choice. Connect it to the Animarket by
-            clicking the wallet icon in the top right corner.
+          {{item.cotent}}
+            
           </div>
         </div>
       </div>
-      <div class="info-card-2">
-        <img
-          loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/6064f49cf0bb284087d7211042e98daff7d725abb789a20513ae1e7da1bebc32?placeholderIfAbsent=true&apiKey=8d233d2874ca4f8c9c23e6e96e902d5f"
-          class="img"
-        />
-        <div class="card-details">
-          <div class="setup-your-wallet-2">Create Collection</div>
-          <div
-            class="set-up-your-wallet-of-choice-connect-it-to-the-nft-market-by-clicking-the-wallet-icon-in-the-top-right-corner-2"
-          >
-            Upload your work and setup your collection. Add a description,
-            social links and floor price.
-          </div>
-        </div>
-      </div>
-      <div class="info-card-3">
-        <img
-          loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/cc1a1c8dd81b77157b1cc8611264783863ab89dbad2ad42e54a75f94fa4e8627?placeholderIfAbsent=true&apiKey=8d233d2874ca4f8c9c23e6e96e902d5f"
-          class="img"
-        />
-        <div class="card-details">
-          <div class="setup-your-wallet-3">Start Earning</div>
-          <div
-            class="set-up-your-wallet-of-choice-connect-it-to-the-nft-market-by-clicking-the-wallet-icon-in-the-top-right-corner-3"
-          >
-            Choose between auctions and fixed-price listings. Start earning by
-            selling your NFTs or trading others.
-          </div>
-        </div>
-      </div>
+  
     </div>
   </div>
 
