@@ -76,7 +76,7 @@
         max-width: 100%;
       }
     }
-    .button {
+    .btn {
       justify-content: center;
       align-items: center;
       border-radius: 20px;
@@ -90,6 +90,7 @@
       text-align: center;
       padding: 0 50px;
       font: 600 16px sans-serif;
+      cursor: pointer;
     }
     @media (max-width: 991px) {
       .button {
@@ -98,8 +99,6 @@
     }
     .img {
       
-      
-    
       width: 20px;
     
       margin: auto 0;
@@ -124,19 +123,9 @@
         max-width: 100%;
       }
     }
-    .total-sale {
-      border-radius: 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: start;
-      flex: 1;
-    
-      font: 400 24px
-        sans-serif;
-    }
    
     
-    .auctions {
+    .info-txt {
       border-radius: 20px;
       display: flex;
       flex-direction: column;
@@ -148,27 +137,13 @@
       
     }
     @media (max-width: 991px) {
-      .auctions {
+      .info-txt {
         white-space: initial;
       }
     }
   
   
-    .artists {
-      border-radius: 20px;
-      display: flex;
-      flex-direction: column;
-      white-space: nowrap;
-      justify-content: start;
-      flex: 1;
-       font: 400 24px
-        sans-serif;
-    }
-    @media (max-width: 991px) {
-      .artists {
-        white-space: initial;
-      }
-    }
+   
   
     .highlighted-nft {
       display: flex;
