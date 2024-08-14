@@ -1,22 +1,29 @@
 
  <div class="navigation">
+   <a [routerLink]="['/routePath']"  >
       <div class=" nav-nav-menu">
     <img src="../../assets/images/Storefront.png" alt=" Logo" class="logo">
     <span >NFT Marketplace</span>
   </div>
-    <div class="nav-nav-menu">
-      <div class="marketplace">Marketplace</div>
-      <div class="rankings">Rankings</div>
-      <div class="connect-a-wallet">Connect a wallet</div>
-      <div class="sign-up">
+  </a>
+    <ul class="nav-nav-menu">
+       <a [routerLink]="['/']"  >
+      <li class="nav-item">Marketplace</li></a>
+      <a [routerLink]="['/']"  >
+      <li class="nav-item">Rankings</li></a>
+     <a [routerLink]="['/']"  >
+      <li class="nav-item">Connect a wallet</li></a>
+     <a [routerLink]="['/']"  >
+      <li class="sign-up ">
         <img
          
           src="../../assets/images/User.png"
           class="img-2"
         />
-        <div class="button">Sign Up</div>
-      </div>
-    </div>
+        <div class="btn-text">Sign Up</div>
+      </li>
+      </a>
+    </ul>
   </div> 
 
 

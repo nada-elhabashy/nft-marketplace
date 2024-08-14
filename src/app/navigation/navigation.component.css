@@ -2,19 +2,20 @@
     .navigation {
       justify-content: space-between;
       align-items: center;
-      /* align-self: stretch; */
-      /* background: var(--Background, #2b2b2b); */
       background-color: #2B2B2B;
-      /* background-color: var(--Background, #2b2b2b); */
       display: flex;
-      /* gap: 40px 100px; */
-      /* flex-wrap: wrap; */
+      gap: 40px 100px;
+      flex-wrap: wrap;
       padding: 20px 50px 20px 50px;
     }
   @media (max-width: 991px) {
       .navigation {
         padding: 0 20px;
       }
+    }
+     a{
+      text-decoration: none;
+       color: #fff;
     }
     /* .nav-logo {
       align-self: stretch;
@@ -56,6 +57,7 @@
       align-self: stretch;
       display: flex;
       min-width: 240px;
+       min-height: 60px;
       align-items: center;
       gap: 10px;
       color: rgba(255, 255, 255, 1);
@@ -70,54 +72,41 @@
         max-width: 100%;
       }
     }
-    .marketplace {
-      align-self: stretch;
+    .nav-item {
+     
       border-radius: 20px;
-      min-height: 46px;
+      /* min-height: 60px; */
       gap: 12px;
       white-space: nowrap;
       margin: auto 0;
+      /* margin-top: 15px; */
       padding: 0 20px;
+      font-size: 16px;
     }
     @media (max-width: 991px) {
-      .marketplace {
+      .nav-item {
         white-space: initial;
       }
     }
-    .rankings {
-      align-self: stretch;
-      border-radius: 20px;
-      min-height: 46px;
-      gap: 12px;
-      white-space: nowrap;
-      margin: auto 0;
-      padding: 0 20px;
-    }
-    @media (max-width: 991px) {
-      .rankings {
-        white-space: initial;
-      }
-    }
-    .connect-a-wallet {
-      align-self: stretch;
-      border-radius: 20px;
-      min-height: 46px;
-      gap: 12px;
-      margin: auto 0;
-      padding: 0 20px;
-    }
+    
     .sign-up {
       justify-content: center;
       align-items: center;
       border-radius: 20px;
-      background: var(--Call-to-Action, #a259ff);
-      background-color: var(--Call-to-Action, #a259ff);
-      align-self: stretch;
+      background-color:  #a259ff;
+     
       display: flex;
-      min-height: 60px;
+      min-height: 46px;
       gap: 12px;
       margin: auto 0;
       padding: 0 30px;
+      cursor: pointer;
+      
+    }
+    li
+    {
+      text-decoration: none;
+      list-style: none;
     }
     @media (max-width: 991px) {
       .sign-up {
@@ -132,10 +121,17 @@
       align-self: stretch;
       margin: auto 0;
     }
-    .button {
-      align-self: stretch;
+    .btn-text {
+      color: #fff;
       margin: auto 0;
     } 
+   
+
+/* .btn-signup:hover {
+    background-color: #922dff;
+} */
+
+
 
 
 /* 
