@@ -1,11 +1,9 @@
-  :host {
-      display: contents;
-    }
+
     .top-rated-artists {
       align-items: center;
       align-self: stretch;
-      background: var(--Background, #2b2b2b);
-      background-color: var(--Background, #2b2b2b);
+
+      background-color: #2b2b2b;
       display: flex;
       flex-direction: column;
       justify-content: start;
@@ -35,7 +33,7 @@
       display: flex;
       min-width: 240px;
       flex-direction: column;
-      color: var(--White, #fff);
+      color:  #fff;
       text-transform: capitalize;
       justify-content: start;
       flex-grow: 1;
@@ -77,7 +75,7 @@
       justify-content: center;
       align-items: center;
       border-radius: 20px;
-      border: 2px solid var(--Call-to-Action, #a259ff);
+      border: 2px solid  #a259ff;
       display: flex;
       min-width: 240px;
       min-height: 60px;
@@ -95,7 +93,7 @@
       }
     }
     .img {
-      aspect-ratio: 1;
+
       object-fit: contain;
       object-position: center;
       width: 20px;
@@ -107,12 +105,17 @@
       margin: auto 0;
     }
     .artist-cards-grid {
-      display: flex;
+      /* display: flex;
       margin-top: 60px;
-      width: 100%;
-      max-width: 1050px;
+      width: 1050px;
+
       flex-direction: column;
-      justify-content: start;
+      justify-content: start; */
+      display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns of equal width */
+  gap: 16px;
+    width: 1050px; /* Adjust the gap between cards */
+  padding: 16px; /* Optional padding around the grid */
     }
     @media (max-width: 991px) {
       .artist-cards-grid {
@@ -120,24 +123,23 @@
         margin-top: 40px;
       }
     }
-    .artist-cards-row {
-      display: flex;
-      width: 100%;
-      align-items: start;
-      gap: 30px;
-      justify-content: start;
-      flex-wrap: wrap;
-    }
+  
     .artist-card {
+      width: 240px;
+      height: 238px;
+
       border-radius: 20px;
-      background-color: rgba(59, 59, 59, 1);
-      position: relative;
+      background-color: #3B3B3B;
+       position: relative;
       display: flex;
       flex-direction: column;
       justify-content: start;
-      flex: 1;
-      flex-basis: 0%;
+      flex: 1; 
+
       padding: 20px;
+      background-color: #3B3B3B;
+  text-align: center; 
+
     }
     .artist-avatar {
       align-self: center;
@@ -154,10 +156,10 @@
       width: 100%;
       align-items: start;
       gap: 10px;
-      justify-content: start;
+      justify-content: center;
     }
     .img-2 {
-      aspect-ratio: 1;
+
       object-fit: contain;
       object-position: center;
       width: 120px;
@@ -175,44 +177,43 @@
       color: #fff;
       text-align: center;
       text-transform: capitalize;
-      font: 600 22px Work Sans, sans-serif;
+      font: 600 22px  sans-serif;
+      margin-top: 10px;
     }
     .additional-info {
       display: flex;
-      margin-top: 5px;
+      margin-top: 15px;
       width: 100%;
-      align-items: start;
+      align-items: center;
       gap: 10px;
       font-size: 16px;
       font-weight: 400;
       justify-content: center;
     }
     .total-sales {
-      color: var(--caption-label-text, #858584);
-      text-align: right;
+      color:  #858584;
+      text-align: center;
       font-family: Work Sans, sans-serif;
-      flex: 1;
-      flex-basis: 0%;
+     
     }
-    /* .34-53-eth {
-      color: var(--Text, #fff);
+    .total-sales-value {
+      color: #fff;
       font-family: Space Mono, sans-serif;
-      flex: 1;
-      flex-basis: 0%;
-    } */
+     
+    } 
     .ranking-number {
       width: 30px;
       border-radius: 20px;
-      background: var(--Background, #2b2b2b);
-      background-color: var(--Background, #2b2b2b);
+      background: #2b2b2b;
+      background-color:  #2b2b2b;
       position: absolute;
-      color: var(--caption-label-text, #858584);
+      color:  #858584;
       white-space: nowrap;
       text-align: center;
       height: 30px;
       left: 20px;
       top: 18px;
-      font: 400 16px/1.4 Space Mono, -apple-system, Roboto, Helvetica,
+      font: 400 16px
         sans-serif;
     }
     @media (max-width: 991px) {
@@ -220,318 +221,9 @@
         white-space: initial;
       }
     }
-    .img-3 {
-      aspect-ratio: 1;
-      object-fit: contain;
-      object-position: center;
-      width: 120px;
-    }
-    .ranking-number-2 {
-      width: 30px;
-      border-radius: 20px;
-      background: var(--Background, #2b2b2b);
-      background-color: var(--Background, #2b2b2b);
-      position: absolute;
-      gap: 10px;
-      color: var(--caption-label-text, #858584);
-      white-space: nowrap;
-      text-align: center;
-      height: 30px;
-      left: 20px;
-      top: 18px;
-      font: 400 16px/1.4 Space Mono, -apple-system, Roboto, Helvetica,
-        sans-serif;
-    }
-    @media (max-width: 991px) {
-      .ranking-number-2 {
-        white-space: initial;
-      }
-    }
-    .img-4 {
-      aspect-ratio: 1;
-      object-fit: contain;
-      object-position: center;
-      width: 120px;
-    }
-    .ranking-number-3 {
-      width: 30px;
-      border-radius: 20px;
-      background: var(--Background, #2b2b2b);
-      background-color: var(--Background, #2b2b2b);
-      position: absolute;
-      gap: 10px;
-      color: var(--caption-label-text, #858584);
-      white-space: nowrap;
-      text-align: center;
-      height: 30px;
-      left: 20px;
-      top: 18px;
-      font: 400 16px/1.4 Space Mono, -apple-system, Roboto, Helvetica,
-        sans-serif;
-    }
-    @media (max-width: 991px) {
-      .ranking-number-3 {
-        white-space: initial;
-      }
-    }
-    .img-5 {
-      aspect-ratio: 1;
-      object-fit: contain;
-      object-position: center;
-      width: 120px;
-    }
-    .ranking-number-4 {
-      width: 30px;
-      border-radius: 20px;
-      background: var(--Background, #2b2b2b);
-      background-color: var(--Background, #2b2b2b);
-      position: absolute;
-      gap: 10px;
-      color: var(--caption-label-text, #858584);
-      white-space: nowrap;
-      text-align: center;
-      height: 30px;
-      left: 20px;
-      top: 18px;
-      font: 400 16px/1.4 Space Mono, -apple-system, Roboto, Helvetica,
-        sans-serif;
-    }
-    @media (max-width: 991px) {
-      .ranking-number-4 {
-        white-space: initial;
-      }
-    }
-    .artist-cards-row-2 {
-      display: flex;
-      margin-top: 30px;
-      width: 100%;
-      align-items: start;
-      gap: 30px;
-      justify-content: start;
-      flex-wrap: wrap;
-    }
-    .img-6 {
-      aspect-ratio: 1;
-      object-fit: contain;
-      object-position: center;
-      width: 120px;
-    }
-    .ranking-number-5 {
-      width: 30px;
-      border-radius: 20px;
-      background: var(--Background, #2b2b2b);
-      background-color: var(--Background, #2b2b2b);
-      position: absolute;
-      gap: 10px;
-      color: var(--caption-label-text, #858584);
-      white-space: nowrap;
-      text-align: center;
-      height: 30px;
-      left: 20px;
-      top: 18px;
-      font: 400 16px/1.4 Space Mono, -apple-system, Roboto, Helvetica,
-        sans-serif;
-    }
-    @media (max-width: 991px) {
-      .ranking-number-5 {
-        white-space: initial;
-      }
-    }
-    .img-7 {
-      aspect-ratio: 1;
-      object-fit: contain;
-      object-position: center;
-      width: 120px;
-    }
-    .ranking-number-6 {
-      width: 30px;
-      border-radius: 20px;
-      background: var(--Background, #2b2b2b);
-      background-color: var(--Background, #2b2b2b);
-      position: absolute;
-      gap: 10px;
-      color: var(--caption-label-text, #858584);
-      white-space: nowrap;
-      text-align: center;
-      height: 30px;
-      left: 20px;
-      top: 18px;
-      font: 400 16px/1.4 Space Mono, -apple-system, Roboto, Helvetica,
-        sans-serif;
-    }
-    @media (max-width: 991px) {
-      .ranking-number-6 {
-        white-space: initial;
-      }
-    }
-    .img-8 {
-      aspect-ratio: 1;
-      object-fit: contain;
-      object-position: center;
-      width: 120px;
-    }
-    .ranking-number-7 {
-      width: 30px;
-      border-radius: 20px;
-      background: var(--Background, #2b2b2b);
-      background-color: var(--Background, #2b2b2b);
-      position: absolute;
-      gap: 10px;
-      color: var(--caption-label-text, #858584);
-      white-space: nowrap;
-      text-align: center;
-      height: 30px;
-      left: 20px;
-      top: 18px;
-      font: 400 16px/1.4 Space Mono, -apple-system, Roboto, Helvetica,
-        sans-serif;
-    }
-    @media (max-width: 991px) {
-      .ranking-number-7 {
-        white-space: initial;
-      }
-    }
-    .img-9 {
-      aspect-ratio: 1;
-      object-fit: contain;
-      object-position: center;
-      width: 120px;
-    }
-    .ranking-number-8 {
-      width: 30px;
-      border-radius: 20px;
-      background: var(--Background, #2b2b2b);
-      background-color: var(--Background, #2b2b2b);
-      position: absolute;
-      gap: 10px;
-      color: var(--caption-label-text, #858584);
-      white-space: nowrap;
-      text-align: center;
-      height: 30px;
-      left: 20px;
-      top: 18px;
-      font: 400 16px/1.4 Space Mono, -apple-system, Roboto, Helvetica,
-        sans-serif;
-    }
-    @media (max-width: 991px) {
-      .ranking-number-8 {
-        white-space: initial;
-      }
-    }
-    .artist-cards-row-3 {
-      display: flex;
-      margin-top: 30px;
-      width: 100%;
-      align-items: start;
-      gap: 30px;
-      justify-content: start;
-      flex-wrap: wrap;
-    }
-    .img-10 {
-      aspect-ratio: 1;
-      object-fit: contain;
-      object-position: center;
-      width: 120px;
-    }
-    .ranking-number-9 {
-      width: 30px;
-      border-radius: 20px;
-      background: var(--Background, #2b2b2b);
-      background-color: var(--Background, #2b2b2b);
-      position: absolute;
-      gap: 10px;
-      color: var(--caption-label-text, #858584);
-      white-space: nowrap;
-      text-align: center;
-      height: 30px;
-      left: 20px;
-      top: 18px;
-      font: 400 16px/1.4 Space Mono, -apple-system, Roboto, Helvetica,
-        sans-serif;
-    }
-    @media (max-width: 991px) {
-      .ranking-number-9 {
-        white-space: initial;
-      }
-    }
-    .img-11 {
-      aspect-ratio: 1;
-      object-fit: contain;
-      object-position: center;
-      width: 120px;
-    }
-    .ranking-number-10 {
-      width: 30px;
-      border-radius: 20px;
-      background: var(--Background, #2b2b2b);
-      background-color: var(--Background, #2b2b2b);
-      position: absolute;
-      gap: 10px;
-      color: var(--caption-label-text, #858584);
-      white-space: nowrap;
-      text-align: center;
-      height: 30px;
-      left: 20px;
-      top: 18px;
-      font: 400 16px/1.4 Space Mono, -apple-system, Roboto, Helvetica,
-        sans-serif;
-    }
-    @media (max-width: 991px) {
-      .ranking-number-10 {
-        white-space: initial;
-      }
-    }
-    .img-12 {
-      aspect-ratio: 1;
-      object-fit: contain;
-      object-position: center;
-      width: 120px;
-    }
-    .ranking-number-11 {
-      width: 30px;
-      border-radius: 20px;
-      background: var(--Background, #2b2b2b);
-      background-color: var(--Background, #2b2b2b);
-      position: absolute;
-      gap: 10px;
-      color: var(--caption-label-text, #858584);
-      white-space: nowrap;
-      text-align: center;
-      height: 30px;
-      left: 20px;
-      top: 18px;
-      font: 400 16px/1.4 Space Mono, -apple-system, Roboto, Helvetica,
-        sans-serif;
-    }
-    @media (max-width: 991px) {
-      .ranking-number-11 {
-        white-space: initial;
-      }
-    }
-    .img-13 {
-      aspect-ratio: 1;
-      object-fit: contain;
-      object-position: center;
-      width: 120px;
-    }
-    .ranking-number-12 {
-      width: 30px;
-      border-radius: 20px;
-      background: var(--Background, #2b2b2b);
-      background-color: var(--Background, #2b2b2b);
-      position: absolute;
-      gap: 10px;
-      color: var(--caption-label-text, #858584);
-      white-space: nowrap;
-      text-align: center;
-      height: 30px;
-      left: 20px;
-      top: 18px;
-      font: 400 16px/1.4 Space Mono, -apple-system, Roboto, Helvetica,
-        sans-serif;
-    }
-    @media (max-width: 991px) {
-      .ranking-number-12 {
-        white-space: initial;
-      }
-    }
+
+
+
+
+
+
