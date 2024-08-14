@@ -123,6 +123,14 @@
      
       margin: auto 0;
     }
+     input{
+      border: none;
+      outline: none;
+      text-decoration: none;
+    
+      font-size: 16px;
+     
+    }
     .btn {
       justify-content: end;
       align-items: center;
@@ -141,14 +149,7 @@
       cursor: pointer;
       border: none;
     }
-    input{
-      border: none;
-      outline: none;
-      text-decoration: none;
-    
-      font-size: 16px;
-     
-    }
+   
   
 
     @media (max-width: 991px) {

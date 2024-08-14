@@ -35,9 +35,14 @@
     }
     .img {
     
-     
+     display: inline-block;
       width: 24px;
       max-width: 100%;
+      margin-right: 5px;
+    }
+    a{
+      text-decoration: none;
+       color: #ccc;
     }
     .additional-info {
       display: flex;
@@ -47,7 +52,7 @@
       flex-direction: column;
       justify-content: start;
     }
-    .nft-marketplace-ui-created-with-anima-for-figma {
+    .title {
       color: #ccc;
       font: 400 16px
         sans-serif;
@@ -73,22 +78,13 @@
       gap: 10px;
       justify-content: start;
     }
-    .img-2 {
+  
+    .img-icon {
      
       width: 32px;
     }
-    .img-3 {
-     
-      width: 32px;
-    }
-    .img-4 {
-     
-      width: 32px;
-    }
-    .img-5 {
-     
-      width: 32px;
-    }
+ 
+   
     .explore {
       display: flex;
       flex-direction: column;
@@ -111,12 +107,10 @@
       font: 400 16px
         sans-serif;
     }
-    .rankings {
+    .links {
       margin-top: 20px;
     }
-    .connect-a-wallet {
-      margin-top: 20px;
-    }
+   
     .subscribe {
       display: flex;
       min-width: 240px;
@@ -124,11 +118,19 @@
       justify-content: start;
       width: 420px;
     }
-    .join-our-weekly-digest {
+    .header {
       color: #fff;
       text-transform: capitalize;
       font: 700 22px
         sans-serif;
+    }
+      input{
+      border: none;
+      outline: none;
+      text-decoration: none;
+    
+      font-size: 16px;
+     
     }
     .subscribe-form-info {
       display: flex;
@@ -157,7 +159,7 @@
       line-height: 1.4;
       justify-content: start;
     }
-    .enter-your-email-here {
+    .email {
       color: var(--Background, #2b2b2b);
       font-weight: 400;
       align-self: stretch;
@@ -165,11 +167,13 @@
       flex-basis: 100px;
       margin: auto 0;
     }
-    .button {
-      align-self: stretch;
+    
+    .btn {
+     
       border-radius: 20px;
-      background-color:  #a259ff;
-      min-height: 60px;
+      background-color: #A259FF;
+     height: 60px;
+     width: 179px;
       gap: 12px;
       color: rgba(255, 255, 255, 1);
       font-weight: 600;
@@ -177,14 +181,30 @@
       text-align: center;
       margin: auto 0;
       padding: 0 50px;
+      border: none;
+            cursor: pointer;
+
     }
     @media (max-width: 991px) {
-      .button {
+      .btn {
         white-space: initial;
         padding: 0 20px;
       }
     }
-    .div {
+     .img-2 {
+     
+      object-fit: contain;
+      object-position: center;
+      width: 20px;
+      align-self: stretch;
+      margin: auto 0;
+    }
+     .btn-txt {
+    
+      margin: auto 0;
+
+    }
+    .copy-right-div {
       display: flex;
       margin-top: 30px;
       max-width: 100%;
@@ -206,11 +226,14 @@
         max-width: 100%;
       }
     }
-    .ⓒ-nft-market-use-this-template-freely {
+    .copy-right {
       margin-top: 20px;
     }
     @media (max-width: 991px) {
-      .ⓒ-nft-market-use-this-template-freely {
+      .copy-right {
         max-width: 100%;
       }
     }
+span{
+  display: inline-block;
+}
