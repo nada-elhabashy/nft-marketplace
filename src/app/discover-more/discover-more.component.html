@@ -9,109 +9,49 @@
       </div>
       <div class="button">
         <img
-         src="../../assets/images/Image Placeholder.png"
+         src="../../assets/images/Eye.png"
           class="img"
         />
         <div class="button-2">See All</div>
       </div>
     </div>
     <div class="nft-cards-row">
-      <div class="nft-card">
+      <div *ngFor="let item of discover" class="nft-card">
         <div class="image">
           <img
-          src="../../assets/images/Image Placeholder.png"
-            class="img-2"
+       [src]=" '../../assets/images/'+item.src"  
+       [alt]="item.alt"
+       class="img-2"
           />
         </div>
         <div class="nft-info">
           <div class="artst-info">
-            <div class="nft-name">Distant Galaxy</div>
+            <div class="nft-name">{{item.name}}</div>
             <div class="artist-avatar-name">
               <div class="avatar">
                 <img
-                   src="../../assets/images/Image Placeholder.png"
+       [src]=" '../../assets/images/'+item.src"  
                   class="img-3"
                 />
               </div>
-              <div class="nft-artist">MoonDancer</div>
+              <div class="nft-artist">{{item.cotent}}</div>
             </div>
           </div>
           <div class="additional-info">
             <div class="price">
               <div class="price-2">Price</div>
-              <div class="1-63-eth">1.63 ETH</div>
+              <div class="priceValue">{{item.price}}</div>
             </div>
             <div class="highest-bid">
               <div class="highest-bid-2">Highest Bid</div>
-              <div >0.33 wETH</div>
+              <div class="priceValue">{{item.bid}}</div>
             </div>
           </div>
         </div>
       </div>
-      <div class="nft-card">
-        <div class="image">
-          <img
-                   src="../../assets/images/Image Placeholder.png"
-            class="img-4"
-          />
-        </div>
-        <div class="nft-info">
-          <div class="artst-info">
-            <div class="nft-name">Life On Edena</div>
-            <div class="artist-avatar-name">
-              <div class="avatar">
-                <img
-                   src="../../assets/images/Avatar.png"
-                  class="img-5"
-                />
-              </div>
-              <div class="nft-artist">NebulaKid</div>
-            </div>
-          </div>
-          <div class="additional-info">
-            <div class="price">
-              <div class="price-3">Price</div>
-              <div >1.63 ETH</div>
-            </div>
-            <div class="highest-bid">
-              <div class="highest-bid-3">Highest Bid</div>
-              <div >0.33 wETH</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="nft-card">
-        <div class="image">
-          <img
-                   src="../../assets/images/Image Placeholder.png"
-            class="img-6"
-          />
-        </div>
-        <div class="nft-info">
-          <div class="artst-info">
-            <div class="nft-name">AstroFiction</div>
-            <div class="artist-avatar-name">
-              <div class="avatar">
-                <img
-                   src="../../assets/images/Avatar.png"
-                  class="img-7"
-                />
-              </div>
-              <div class="nft-artist">Spaceone</div>
-            </div>
-          </div>
-          <div class="additional-info">
-            <div class="price">
-              <div class="price-4">Price</div>
-              <div>1.63 ETH</div>
-            </div>
-            <div class="highest-bid">
-              <div class="highest-bid-4">Highest Bid</div>
-              <div >0.33 wETH</div>
-            </div>
-          </div>
-        </div>
-      </div>
+
+
+     
     </div>
   </div>
 

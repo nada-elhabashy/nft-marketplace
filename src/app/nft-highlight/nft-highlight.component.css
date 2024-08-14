@@ -1,12 +1,10 @@
- :host {
-      display: contents;
-    }
-    /* .59 {
+
+   .text {
       font-size: 38px;
       font-weight: 700;
       line-height: 1.2;
       text-transform: capitalize;
-    } */
+    } 
     .div {
       display: flex;
       flex-direction: column;
@@ -77,7 +75,7 @@
       margin: auto 0;
     }
     .img-2 {
-      aspect-ratio: 1;
+     
       object-fit: contain;
       object-position: center;
       width: 24px;
@@ -86,7 +84,7 @@
       color: #fff;
       align-self: stretch;
       margin: auto 0;
-      font: 400 16px/1.4 Work Sans, -apple-system, Roboto, Helvetica,
+      font: 400 16px
         sans-serif;
     }
     .magic-mashrooms {
@@ -94,7 +92,7 @@
       color: #fff;
       text-transform: capitalize;
       margin-top: 30px;
-      font: 600 51px/1.1 Work Sans, -apple-system, Roboto, Helvetica,
+      font: 600 51px
         sans-serif;
     }
     @media (max-width: 991px) {
@@ -103,21 +101,27 @@
         font-size: 40px;
       }
     }
-    .button {
+    .btn {
       justify-content: center;
       align-items: center;
       border-radius: 20px;
-      background: var(--Text, #fff);
-      background-color: var(--Text, #fff);
+      background-color:  #fff;
       display: flex;
       margin-top: 30px;
-      min-height: 60px;
+    
       gap: 12px;
-      color: var(--Background, #2b2b2b);
+      color: #2b2b2b;
       text-align: center;
-      padding: 19px 50px;
-      font: 600 16px/1.4 Work Sans, -apple-system, Roboto, Helvetica,
+     
+      font: 600 16px
         sans-serif;
+        width: 198px;
+      height: 60px;
+      padding: 22px, 50px, 22px, 50px;
+     
+      /* margin: auto 0; */
+      cursor: pointer;
+      text-decoration: none;
     }
     @media (max-width: 991px) {
       .button {
@@ -125,17 +129,14 @@
       }
     }
     .img-3 {
-      aspect-ratio: 1;
+     
       object-fit: contain;
       object-position: center;
       width: 20px;
       align-self: stretch;
       margin: auto 0;
     }
-    .button-2 {
-      align-self: stretch;
-      margin: auto 0;
-    }
+    
     .auction-timer {
       border-radius: 20px;
       background-color: rgba(59, 59, 59, 0.5);

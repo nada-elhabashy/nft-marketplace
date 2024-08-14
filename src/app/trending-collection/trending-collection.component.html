@@ -7,28 +7,29 @@
       </div>
     </div>
     <div class="collection-card-row">
-      <div class="collection-card">
+      <div *ngFor="let item of trending" class="collection-card">
         <div class="photos-number-of-additional-nf-ts">
           <img
-          src="../../assets/images/Primary Photo Placeholder.png"
-            class="img"
+              [src]=" '../../assets/images/'+item.src"  
+               [alt]="item.alt"    
+               class="img"
           />
           <div class="div">
             <img
-                      src="../../assets/images/Primary Photo Placeholder.png"
-
+ [src]=" '../../assets/images/'+item.img1"  
+       [alt]="item.alt"
           class="img-2"
             />
             <img
-                      src="../../assets/images/Primary Photo Placeholder.png"
-
+ [src]=" '../../assets/images/'+item.img2"  
+       [alt]="item.alt"
             class="img-3"
             />
             <div class="number-of-additional-nf-ts">1025+</div>
           </div>
         </div>
         <div class="collection-info">
-          <div class="collection-name">DSGN Animals</div>
+          <div class="collection-name">{{item.name}}</div>
           <div class="artist-card">
             <div class="avatar">
               <img
@@ -37,78 +38,11 @@
                  class="img-4"
               />
             </div>
-            <div class="artist-name">MrFox</div>
+            <div class="artist-name">{{item.cotent}}</div>
           </div>
         </div>
       </div>
-      <div class="collection-card">
-        <div class="photos-number-of-additional-nf-ts">
-          <img
-               class="img"
-                         src="../../assets/images/Primary Photo Placeholder.png"
-
-          />
-          <div class="div">
-            <img
-                      src="../../assets/images/Primary Photo Placeholder.png"
-
-                      class="img-5"
-            />
-            <img
-                      src="../../assets/images/Primary Photo Placeholder.png"
-
-               class="img-6"
-            />
-            <div class="number-of-additional-nf-ts">1025+</div>
-          </div>
-        </div>
-        <div class="collection-info">
-          <div class="collection-name">Magic Mushrooms</div>
-          <div class="artist-card">
-            <div class="avatar">
-              <img
-                        src="../../assets/images/Primary Photo Placeholder.png"
-
-                 class="img-7"
-              />
-            </div>
-            <div class="artist-name">Shroomie</div>
-          </div>
-        </div>
-      </div>
-      <div class="collection-card">
-        <div class="photos-number-of-additional-nf-ts">
-          <img
-                    src="../../assets/images/Primary Photo Placeholder.png"
-
-               class="img"
-          />
-          <div class="div">
-            <img
-           src="../../assets/images/Primary Photo Placeholder.png"
-
-            class="img-8"
-            />
-            <img
-                src="../../assets/images/Primary Photo Placeholder.png"
-              class="img-9"
-            />
-            <div class="number-of-additional-nf-ts">1025+</div>
-          </div>
-        </div>
-        <div class="collection-info">
-          <div class="collection-name">Disco Machines</div>
-          <div class="artist-card">
-            <div class="avatar">
-              <img
-                   src="../../assets/images/Primary Photo Placeholder.png"
-            class="img-10"
-              />
-            </div>
-            <div class="artist-name">BeKind2Robots</div>
-          </div>
-        </div>
-      </div>
+   
     </div>
   </div>
 

@@ -32,7 +32,7 @@
       display: flex;
       min-width: 240px;
       flex-direction: column;
-      color: var(--White, #fff);
+      color:  #fff;
       text-transform: capitalize;
       justify-content: start;
       flex: 1;
@@ -68,7 +68,7 @@
       justify-content: center;
       align-items: center;
       border-radius: 20px;
-      border: 2px solid var(--Call-to-Action, #a259ff);
+      border: 2px solid  #a259ff;
       display: flex;
       min-height: 60px;
       gap: 12px;
@@ -85,9 +85,7 @@
       }
     }
     .img {
-      aspect-ratio: 1;
-      object-fit: contain;
-      object-position: center;
+      
       width: 20px;
       align-self: stretch;
       margin: auto 0;
@@ -130,7 +128,7 @@
       justify-content: start;
     }
     .img-2 {
-      aspect-ratio: 1.12;
+     
       object-fit: contain;
       object-position: center;
       width: 100%;
@@ -155,9 +153,9 @@
       justify-content: start;
     }
     .nft-name {
-      color: var(--White, #fff);
+      color: #fff;
       text-transform: capitalize;
-      font: 600 22px/1.4 Work Sans, -apple-system, Roboto, Helvetica,
+      font: 600 22px 
         sans-serif;
     }
     .artist-avatar-name {
@@ -176,26 +174,26 @@
       width: 24px;
     }
     .img-3 {
-      aspect-ratio: 1;
-      object-fit: contain;
-      object-position: center;
+     border-radius: 50%;
+      /* object-fit: contain;
+      object-position: center; */
       width: 24px;
     }
     .nft-artist {
-      color: var(--White, #fff);
+      color: #fff;
       flex: 1;
       flex-basis: 0%;
-      font: 400 16px/1.4 Space Mono, -apple-system, Roboto, Helvetica,
+      font: 400 16px 
         sans-serif;
     }
     .additional-info {
       display: flex;
       margin-top: 25px;
       width: 100%;
-      align-items: start;
+      align-items: center;
       font-family: Space Mono, sans-serif;
       font-weight: 400;
-      justify-content: start;
+      justify-content: center;
     }
     .price {
       display: flex;
@@ -210,16 +208,16 @@
       font-size: 12px;
       line-height: 1.1;
     }
-    /* .1-63-eth {
+     .priceValue {
       color: var(--White, #fff);
       font-size: 16px;
       line-height: 1.4;
       margin-top: 8px;
-    } */
+    } 
     .highest-bid {
       display: flex;
       flex-direction: column;
-      text-align: right;
+      text-align: center;
       justify-content: center;
       flex: 1;
       flex-basis: 21px;
@@ -229,55 +227,4 @@
       font-size: 12px;
       line-height: 1.1;
     }
-    /* .0-33-w-eth {
-      color: var(--White, #fff);
-      font-size: 16px;
-      line-height: 1.4;
-      margin-top: 8px;
-    } */
-    .img-4 {
-      aspect-ratio: 1.12;
-      object-fit: contain;
-      object-position: center;
-      width: 100%;
-      border-radius: 20px 20px 0px 0px;
-    }
-    .img-5 {
-      aspect-ratio: 1;
-      object-fit: contain;
-      object-position: center;
-      width: 24px;
-    }
-    .price-3 {
-      color: #858584;
-      font-size: 12px;
-      line-height: 1.1;
-    }
-    .highest-bid-3 {
-      color: #858584;
-      font-size: 12px;
-      line-height: 1.1;
-    }
-    .img-6 {
-      aspect-ratio: 1.12;
-      object-fit: contain;
-      object-position: center;
-      width: 100%;
-      border-radius: 20px 20px 0px 0px;
-    }
-    .img-7 {
-      aspect-ratio: 1;
-      object-fit: contain;
-      object-position: center;
-      width: 24px;
-    }
-    .price-4 {
-      color: #858584;
-      font-size: 12px;
-      line-height: 1.1;
-    }
-    .highest-bid-4 {
-      color: #858584;
-      font-size: 12px;
-      line-height: 1.1;
-    }
+  
