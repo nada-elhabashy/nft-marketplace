@@ -13,4 +13,9 @@ import { RouterLink } from '@angular/router';
 })
 export class NavigationComponent {
 
+   menuOpen = false;
+
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+  }
 }

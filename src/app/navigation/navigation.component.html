@@ -6,7 +6,9 @@
     <span >NFT Marketplace</span>
   </div>
   </a>
-    <ul class="nav-nav-menu">
+   <span class="nav-toggle" (click)="toggleMenu()">&#9776;</span>
+  <ul class="nav-nav-menu" [class.open]="menuOpen">
+   
        <a [routerLink]="['/']"  >
       <li class="nav-item">Marketplace</li></a>
       <a [routerLink]="['/']"  >

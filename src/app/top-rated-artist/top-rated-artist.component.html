@@ -12,19 +12,19 @@
            src="../../assets/images/Primary Photo Placeholder.png"
           class="img"
         />
-        <div class="button-2">View Rankings</div>
+        <div class="button-2" [routerLink]="['/']" routerLinkActive="router-link-active" >View Rankings</div>
       </div>
     </div>
     <div class="artist-cards-grid">
       <!-- <div class="artist-cards-row"> -->
-       
-     
+
+
            <div  *ngFor="let item of topRated" class="artist-card">
           <div class="artist-avatar">
             <div class="avatar">
               <img
            [src]=" '../../assets/images/'+item.src"
-           [alt]=" item.alt" 
+           [alt]=" item.alt"
                 class="img-2"
               />
             </div>
@@ -38,7 +38,7 @@
           </div>
           <div class="ranking-number">{{item.id}}</div>
         </div>
-      
+
 
 
 
@@ -46,7 +46,7 @@
 
 
       <!-- </div> -->
-     
+
     </div>
   </div>
 

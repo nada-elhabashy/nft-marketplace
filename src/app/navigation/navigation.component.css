@@ -1,131 +1,133 @@
+.navigation {
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2B2B2B;
+  display: flex;
+  gap: 40px 100px;
+  flex-wrap: wrap;
+  padding: 20px 50px;
+}
 
-    .navigation {
-      justify-content: space-between;
-      align-items: center;
-      background-color: #2B2B2B;
-      display: flex;
-      gap: 40px 100px;
-      flex-wrap: wrap;
-      padding: 20px 50px 20px 50px;
-    }
-  @media (max-width: 991px) {
-      .navigation {
-        padding: 0 20px;
-      }
-    }
-     a{
-      text-decoration: none;
-       color: #fff;
-    }
-    /* .nav-logo {
-      align-self: stretch;
-      display: flex;
-      min-width: 240px;
-      align-items: center;
-      gap: 10px;
-      justify-content: start;
-      width: 243px;
-      margin: auto 0;
-    } */
-    .navbar-brand {
+@media (max-width: 991px) {
+  .navigation {
+    padding: 10px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar-brand {
   width: 243.41px;
   height: 32px;
-    display: flex;
-    align-items: center;
-    margin-left: 30px;
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
 }
-.navbar-brand span{
+
+.navbar-brand span {
   font-weight: 700;
-    font-size:16px;
+  font-size: 16px;
 }
 
 .logo {
-    width: 32px;
-    height: 32px;
-    margin-right: 10px;
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
 }
-    .img {
-      
-      object-fit: contain;
-      object-position: center;
-      width: 243px;
-      align-self: stretch;
-      min-width: 240px;
-      margin: auto 0;
-    }
-    .nav-nav-menu {
-      align-self: stretch;
-      display: flex;
-      min-width: 240px;
-       min-height: 60px;
-      align-items: center;
-      gap: 10px;
-      color: rgba(255, 255, 255, 1);
-      text-align: center;
-      justify-content: end;
-      flex-wrap: wrap;
-      margin: auto 0;
-      font: 600 16px;
-    }
-    @media (max-width: 991px) {
-      .nav-nav-menu {
-        max-width: 100%;
-      }
-    }
-    .nav-item {
-     
-      border-radius: 20px;
-      /* min-height: 60px; */
-      gap: 12px;
-      white-space: nowrap;
-      margin: auto 0;
-      /* margin-top: 15px; */
-      padding: 0 20px;
-      font-size: 16px;
-    }
-    @media (max-width: 991px) {
-      .nav-item {
-        white-space: initial;
-      }
-    }
-    
-    .sign-up {
-      justify-content: center;
-      align-items: center;
-      border-radius: 20px;
-      background-color:  #a259ff;
-     
-      display: flex;
-      min-height: 46px;
-      gap: 12px;
-      margin: auto 0;
-      padding: 0 30px;
-      cursor: pointer;
-      
-    }
-    li
-    {
-      text-decoration: none;
-      list-style: none;
-    }
-    @media (max-width: 991px) {
-      .sign-up {
-        padding: 0 20px;
-      }
-    }
-    .img-2 {
-      aspect-ratio: 1;
-      object-fit: contain;
-      object-position: center;
-      width: 20px;
-      align-self: stretch;
-      margin: auto 0;
-    }
-    .btn-text {
-      color: #fff;
-      margin: auto 0;
-    } 
-   
+
+.nav-nav-menu {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  justify-content: end;
+  flex-wrap: wrap;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+@media (max-width: 991px) {
+  .nav-nav-menu {
+    flex-direction: column;
+    width: 100%;
+    display: none; 
+  }
+  
+  .nav-item {
+    width: 100%;
+    text-align: left;
+    padding: 15px 0;
+    border-bottom: 1px solid #3b3b3b;
+  }
+}
+
+.nav-item {
+  border-radius: 20px;
+  white-space: nowrap;
+  padding: 0 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.sign-up {
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #a259ff;
+  display: flex;
+  min-height: 46px;
+  gap: 12px;
+  padding: 0 30px;
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .sign-up {
+    padding: 0 20px;
+  }
+}
+
+.img-2 {
+  width: 20px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.btn-text {
+  color: #fff;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+
+.nav-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+@media (max-width: 991px) {
+  .nav-toggle {
+    display: block;
+    margin-left: auto;
+  }
+
+  .nav-nav-menu.open {
+    display: flex;
+  }
+}
+
 
 /* .btn-signup:hover {
     background-color: #922dff;
